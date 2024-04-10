@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/user/DASHBOARD/faveicon.png" type="image/png">
+    <title>Audio Player</title>
+    <title>Кнопки ресурсів</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="audioPlayer">
+    <select id="stationSelector">
+        <option value="http://live.radioec.com.ua:8000/kievhi">Країна ФМ</option>
+        <option value="https://cast.radiogroup.com.ua/nrj">NRJ</option>
+        <option value="http://212.26.132.129:8000/ArmyFM">ArmyFM</option>
+        <option value="http://online.kissfm.ua/KissFM_Live">KissFM_Live</option>
+        <option value="http://online.kissfm.ua/KissFM_Ukr_Live">KissFM_Ukr_Live</option>
+        <option value="http://online.kissfm.ua/KissFM_Digital_Live">KissFM_Digital_Live</option>
+        
+        <!-- Додайте інші радіостанції тут -->
+    </select>
+    <audio controls style="width: 90%; margin: 0 auto; display: block;" id="player">
+        <source src="http://live.radioec.com.ua:8000/kievhi" type="audio/mpeg">
+    </audio>
+</div>
+<div style="margin-top: 80px;">
+    <!-- Ваш вміст тут -->
+</div>
+<div class="container">
+    <div class="block">
+        <h2>Job</h2>
+        <a href="https://atlassian.net" class="button red">JIRA</a>
+        <a href="https://trello.com/" class="button blue">Trello</a>
+    </div>
+    
+    <div class="block">
+        <h2>Pentest INFO</h2>
+        <a href="https://medium.com/?tag=cybersecurity" class="button red">Medium</a>
+        <a href="https://www.exploit-db.com/" class="button blue">Exploit-db</a>
+        <a href="https://vuldb.com" class="button blue">Vulnerability Database</a>
+        <a href="https://attack.mitre.org/" class="button blue">MITRE ATT&CK®</a>
+        <a href="https://cert.gov.ua/" class="button blue">CERT-UA</a>
+    </div>
+
+    <div class="block">
+        <h2>For Checklist</h2>
+        <a href="https://github.com/Zavada-Nazarii/vulnerability-Checklist" class="button green">Vulnerability-Checklist</a>
+        <a href="https://book.hacktricks.xyz/welcome/about-the-author" class="button green">Hacktricks</a>
+        <a href="https://pentestbook.six2dez.com/enumeration/ports" class="button red">Pentestbook</a>
+        <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/" class="button red">OWASP Guide</a>
+        <a href="https://cheatsheetseries.owasp.org/index.html" class="button red">OWASP Cheat Sheet Series</a>
+        <a href="https://www.cobalt.io/vulnerability-wiki/v5-validation-sanitization" class="button red">Pentest Vulnerability Wiki</a>
+        <a href="https://github.com/oxfemale/PENTESTING-BIBLE" class="button red">PENTESTING-BIBLE</a>
+    </div>
+
+    <div class="block">
+        <h2>Payloads</h2>
+        <!-- додайте тут посилання на ресурси, як в попередніх блоках -->
+        <a href="file:///home/user/Lists/SecLists/Fuzzing/XSS-common-in-my-work.txt" class="button green">XSS Payloads</a>
+        <a href="https://html5sec.org/" class="button green">HTML5 Security Cheatsheet</a>
+        <a href="/home/user/Lists/Leaked-Credentials.txt" class="button green">Leaked-Credentials</a>
+        <a href="file:///home/user/Lists/SecLists/Fuzzing/SQLi/quick-SQLi.txt" class="button red">SQL easy</a>
+        <a href="https://portswigger.net/web-security/sql-injection/cheat-sheet" class="button red">SQL injection cheat sheet</a>
+        <a href="https://linuxcommandlibrary.com/" class="button red">Linux Command Library</a>
+        <a href="https://github.com/cipher387/Dorks-collections-list/" class="button red">Dorks-collections-list</a>
+    </div>
+    
+    <div class="block">
+        <h2>Different</h2>
+        <a href="https://translate.google.com" class="button red">Translate</a>
+        <a href="https://chat.openai.com/?model=gpt-4" class="button blue">ChatGPT</a>
+        <a href="https://www.facebook.com/" class="button red">Facebook</a>
+        <a href="https://www.linkedin.com/feed/" class="button red">LinkedIn</a>
+        <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" class="button red">Gmail</a>
+        <a href="https://uk.piliapp.com/timer/alarm-clock/" class="button red">alarm-clock</a>
+        <a href="https://explorer.globe.engineer/" class="button red">Globe</a>
+        
+    </div>
+
+    <div class="block">
+        <h2>Pentest LAB</h2>
+        <a href="https://0xdf.gitlab.io/" class="button red">0xdf CTF Write Up</a>
+        <a href="https://portswigger.net/web-security/all-labs" class="button blue">Portswigger</a>
+        <a href="https://academy.tcm-sec.com/?flash=checkout.already_purchased_error" class="button red">TCM</a>
+        <a href="https://skillsforall.com/dashboard" class="button red">CISCO</a>
+        <a href="https://tryhackme.com/p/NZa" class="button red">TryHackMe</a>
+        <a href="https://ringzer0ctf.com/#" class="button red">RingZer0</a>
+        
+        
+    </div>
+    <div class="block">
+        <h2>Pentest Tools</h2>
+        <a href="https://docs.w3cub.com/http/basics_of_http/mime_types/complete_list_of_mime_types.html" class="button red">MIME types</a>
+        <a href="https://gchq.github.io/CyberChef/" class="button red">CyberChef</a>
+        <a href="https://jwt.io/" class="button red">JWT</a>
+        <a href="https://tools.nakanosec.com/csrf/" class="button blue">CSRF PoC</a>
+        <a href="https://crackstation.net/" class="button red">Hash crackstation</a>
+        <a href="https://ivangoncharov.github.io/graphql-voyager/" class="button blue">Voyager</a>
+        <a href="https://requestbin.com/" class="button blue">Webhook</a>
+        <a href="https://dnsdumpster.com/" class="button red">DnsDumpstern</a>
+        <a href="https://www.shodan.io/dashboard" class="button red">Shodan</a>
+        <a href="https://www.tutorialspoint.com/google_hacking_tests.htm" class="button red">Google Dorks</a>
+        <a href="https://pentest-tools.com/information-gathering/google-hacking" class="button red">Google Dorks</a>
+        
+    </div>
+    <div class="block">
+        <h2>QA Tools</h2>
+        <a href="https://www.shorturl.at/" class="button red">Shorturl</a>
+        <a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="button blue">HTML Editor</a>
+        <a href="https://public.sqrx.com/web/" class="button red">[Square]</a>
+        <a href="https://www.browserling.com/" class="button red">BrowserLing</a>
+        <a href="https://uk.piliapp.com/symbol/" class="button red">Symbol</a>
+        <a href="https://text-compare.com/" class="button red">Text-compare</a>
+        <a href="https://jsonviewer.stack.hu/" class="button red">JsonViewer</a>
+        <a href="https://codebeautify.org/htmlviewer" class="button red">HTML-Viewer</a>
+        <a href="https://beautifier.io/" class="button red">JS-beautifier</a>
+        <a href="https://jsoncrack.com/editor" class="button red">Jsoncrack</a>
+    </div>
+    <!-- Просто додавайте нові блоки та кнопки, як показано вище -->
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('a').forEach(link => {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer'); 
+        });
+    });
+</script>
+<script>
+    document.getElementById("stationSelector").addEventListener("change", function() {
+        let player = document.getElementById("player");
+        player.pause();
+        player.querySelector("source").src = this.value;
+        player.load();
+        player.play();
+    });
+</script>
+</body>
+</html>
+

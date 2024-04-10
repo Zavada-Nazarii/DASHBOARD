@@ -1,0 +1,81 @@
+        /* Основні стилі */
+        #audioPlayer {
+            width: 100%;
+            position: fixed; /* Фіксація позиції плеєра */
+            top: 0; /* Позиціонування з верхнього краю сторінки */
+            z-index: 1000; /* Забезпечити, що плеєр завжди зверху */
+            background-color: #f2f2f2; /* Фон плеєра */
+            padding: 10px 0; /* Відступи навколо плеєра */
+            opacity: 0.4;
+        }
+        .white-text {
+    color: white;
+  }
+        #stationSelector {
+    margin-left: 20px;  /* Відступ зліва */
+    margin-right: 20px; /* Відступ справа */
+    background-color: #e5e5e5;
+    
+}
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .block {
+            flex: 1 1 calc(25% - 10px); /* calc використовується, щоб відняти відстань між блоками */
+            max-width: 23%; /* для того, щоб блоки були приблизно однакової ширини */
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box; /* врахування padding у загальній ширині */
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .block h2 {
+            margin-top: 0;
+            color: #800080;
+        }
+
+        .button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #999;  /* сірий колір */
+    	    opacity: 0.65;  /* 50% прозорість */
+        }
+
+a {
+    text-decoration: none;
+}
+	body {
+            background-image: url('/home/n.zavada/DASHBOARD/fone.jpg');
+    	    background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100%;
+}
+html {
+    height: 100%;
+}
+
+.block:hover {
+    background-color: #ccc;  /* змінити колір фону при наведенні */
+    transform: scale(1.05);  /* невелике збільшення розміру кнопки */
+    transition: all 0.3s;   /* плавний перехід між стилями */
+}
+
+.button:hover {
+    background-color: #cec;  /* змінити колір фону при наведенні */
+    transform: scale(1.05);  /* невелике збільшення розміру кнопки */
+    transition: all 0.3s;   /* плавний перехід між стилями */
+}
+
+
